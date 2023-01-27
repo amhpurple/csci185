@@ -1,11 +1,13 @@
 /* You're welcome to change any of this! */
 * {
     box-sizing: border-box;
+    background-color: blanchedalmond;
 }
 
 body {
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: chocolate;
 }
 
 p, a, li {
