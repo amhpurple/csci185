@@ -3,3 +3,13 @@ body {
 }
 
 /* Your code here */
+header {
+    background-color: coral;
+    padding: 30px;
+}
+/* target sections in main */
+main > section {
+    border: solid 1px greenyellow;
+    display: inline-block;
+    margin: 20px;
+}
