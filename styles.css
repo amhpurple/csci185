@@ -4,6 +4,11 @@
     background-color: blanchedalmond;
 }
 
+header {
+   text-align: center; 
+   padding: 20px;
+}
+
 body {
     margin: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -13,4 +18,15 @@ body {
 p, a, li {
     line-height: 1.5em;
     font-size: 1.1em;
+}
+
+a{
+    color:black;
+    transition: color 0.2s, ease-out 0s;
+    transition: font-size 1.5s, ease-out 0.1s;
+}
+
+a:hover{
+    color: cadetblue;
+    font-size: 125%;
 }
