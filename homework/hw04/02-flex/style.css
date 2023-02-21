@@ -11,4 +11,31 @@ body {
     margin: 0;
 }
 
+
+
 /* create additional rules below:  */
+
+main section {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+#home {
+    background-color: coral;
+}
+
+#bio {
+    background-color: chocolate ;
+}
+
+#portfolio {
+    background-color: rgb(200, 19, 55);
+}
+
+#contact {
+    background-color: brown;
+}
