@@ -48,9 +48,10 @@ main {
     margin-right: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
-    
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXwuKR_YmWXoY4oT0Tbn1wq_0JbVDhL0AxlA&usqp=CAU);
+    background-attachment: fixed;
 }
+
 
 h2 {
     text-align: center;
@@ -68,7 +69,7 @@ section {
     min-width: 40%;
 }
 
-ul, li, a {
+ul, li, a, div {
     background-color: coral;
     
 }
@@ -76,4 +77,33 @@ ul, li, a {
 #quizzes {
     grid-column: 1/3;
     text-align: center;
+}
+
+#quizzes div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+    
+    #tutorials {
+        grid-row: 5/6;
+    }
+    #homework {
+        grid-row: 2;
+    }
+    #inspiration {
+        grid-row: 3;
+    }
+    #lectures {
+        grid-row: 4;
+    }
+    #quizzes {
+        grid-row: 1;
+    }
 }
