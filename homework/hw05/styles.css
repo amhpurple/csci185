@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body * {
     box-sizing: border-box;
+    font-family: Georgia;
 }
 
 body {
@@ -11,3 +14,36 @@ body {
 }
 
 /* Your CSS Code Here! */
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(195, 195, 240);
+    
+}
+
+header img {
+    border-radius: 50%;
+}
+
+h1, h2{
+    font-family: 'Pacifico', cursive;
+}
+
+#about {
+    margin: 60px;
+}
