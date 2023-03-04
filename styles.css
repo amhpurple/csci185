@@ -67,6 +67,11 @@ section {
     margin-top: 10px;
     background-color: coral;
     min-width: 40%;
+    /* animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-duration: 5s;
+    animation-direction: alternate; */
 }
 
 ul, li, a, div {
@@ -83,6 +88,23 @@ ul, li, a, div {
     display: flex;
     flex-direction: column;
 }
+
+/* section:hover, section:focus {
+    animation-play-state: running;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.9); 
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); 
+    } 
+} */
 
 @media screen and (max-width: 800px) {
     main {
