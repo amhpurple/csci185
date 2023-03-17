@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 body * {
     box-sizing: border-box;
 }
@@ -14,8 +16,73 @@ header, main, footer {
 
 header {
     background-color: #013672;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    column-gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo-header {
+    margin-right: 700px;
+    margin-left: 20px;
 }
 
 header img, footer img {
     width: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 40px;
+}
+
+h1, h2, h3 {
+    font-family: 'Passion One', cursive;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.card img {
+    width: 100%;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.card:hover {
+    color: white;
+    background-color: #013672;
+    border: 3px solid rgb(0, 217, 255);
+    transition: all ease-in .2s;
+    transition: all ease-out .2s;
+}
+
+@media screen and (max-width: 800px) {
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    nav {
+        display: none;
+    }
 }
