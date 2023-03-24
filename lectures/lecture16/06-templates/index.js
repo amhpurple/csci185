@@ -14,16 +14,16 @@ document.querySelector('main').innerHTML = `
     </section>
 `;
 
-// function getBackgroundColor() {
-//     const r = Math.floor(Math.random() * 255);
-//     const g = Math.floor(Math.random() * 255);
-//     const b = Math.floor(Math.random() * 255);
-//     return `rgb(${r}, ${g}, ${b})`;
-// }
-//
-// document.querySelector('main').innerHTML = `
-//     <section class="card" style="background-color: ${getBackgroundColor()}" >
-//         <img src="${pic}" />
-//         <p>Welcome, ${firstName}. Your current high score is ${score}.</p>
-//     </section>
-// `;
+function getBackgroundColor() {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+document.querySelector('main').innerHTML = `
+    <section class="card" style="background-color: ${getBackgroundColor()}" >
+        <img src="${pic}" />
+        <p>Welcome, ${firstName}. Your current high score is ${score}.</p>
+    </section>
+`;
