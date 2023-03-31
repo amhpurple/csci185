@@ -16,7 +16,7 @@ function dayCycle() {
     counter += 1;
 }
 
-setInterval (dayCycle, 1000)
+// setInterval (dayCycle, 1000)
 
 
     function nightTheme() {
