@@ -16,6 +16,9 @@ function mouseDragged(){
     // smarter:
     const color = document.querySelector("#color").value;
     fill(color);
+    // noStroke();
+    const outline = document.querySelector('#outline').value;
+    stroke(outline);
     const size = document.querySelector("#size").value;
     const shape = document.querySelector('#shape').value;
     if (shape === 'circle') {
@@ -33,6 +36,9 @@ function mouseDragged(){
     }
     else if (shape === 'ellipse') {
         ellipse(mouseX, mouseY, size, size/2)
+    }
+    else if (shape === 'erase') {
+        clear()
     }
 }
 
