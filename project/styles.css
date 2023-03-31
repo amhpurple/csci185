@@ -1,0 +1,133 @@
+.night #colorTop, #colorBottom, #colorTLeft, #colorTRight, #colorBLeft, #colorBRight, #buttonBox {
+    background-color: midnightblue;
+}
+
+.dawn #colorTop {
+    background-color: rgb(74, 210, 255);
+}
+
+.dawn #colorTLeft, #colorTRight {
+    background-color: lightskyblue;
+}
+
+.dawn #colorBLeft, #colorBRight, #buttonBox {
+    background-color: #ddc9d8;
+}
+
+.dawn #colorBottom {
+    background-color: #c0fedd;
+}
+
+.day #colorTop, #colorBottom, #colorTLeft, #colorTRight, #colorBLeft, #colorBRight, #buttonBox {
+    background-color: deepskyblue;
+}
+
+.dusk #colorTop {
+    background-color: rgb(44, 44, 192);
+}
+
+.dusk #colorTLeft, #colorTRight{
+    background-color: #094bae;
+}
+
+.dusk #colorBLeft, #colorBRight, #buttonBox {
+    background-color: #0658a4;
+}
+
+.dusk #colorBottom {
+    background-color: #61D095;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div{
+    display: grid;
+    grid-template-columns: 1fr 1fr, 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+
+section p {
+    text-align: center;
+}
+
+/* section {
+    border: solid 2px black;
+} */
+
+#colorTop {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1;
+    min-height: 20vh;
+    border-top: solid 4px black;
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+}
+
+#colorTLeft {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2;
+    border-left: solid 4px black;
+}
+
+#colorBLeft {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3;
+    border-left: solid 4px black;
+}
+
+#colorTRight {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2;
+    border-right: solid 4px black;
+}
+
+#colorBRight {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 3;
+    min-height: 30vh;
+    border-right: solid 4px black;
+}
+
+#colorBottom {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 4;
+    min-height: 10vh;
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+    border-bottom: solid 4px black;
+}
+
+#buttonBox {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3/4;
+}
+
+#textBox {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2/3;
+    min-height: 60vh;
+    border: solid 6px black;
+    background-color: rgb(72, 69, 69);
+    color: rgb(204, 182, 15);
+}
+
+#beginText {
+    
+}
+
