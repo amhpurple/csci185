@@ -40,16 +40,42 @@
               
             </section>
 
-            <section id = textBox>
-                <header>
-                    <h1>Welcome</h1>
-                </header>
+            <section id="textBox">
+            
+                <section id = "page1">
+                    <header class="boxStyling">
+                        <h1>Welcome</h1>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1', '#page2')">NEXT</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page2" class="hidden">
+                    <header class="boxStyling">
+                        <h1>page2</h1>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page2', '#page3')">NEXT</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page3" class="hidden">
+                    <header class="boxStyling">
+                        <h1>page3</h1>
+                    </header>
+                </section>
+
             </section>
 
             <section id = buttonBox>
-                <h2>
-                    <button id="next1" title="progress" onclick="nextText1('#beginText')">NEXT</button>
-                </h2>
+                <!-- <h2>
+                    <button id="nextBIntro" title="progress" onclick="nextPage('#page2')">NEXT</button>
+                </h2> -->
             </section>
         </div>
         <!-- <i id="sun" class="fa-solid fa-circle"></i> -->

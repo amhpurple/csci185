@@ -1,24 +1,200 @@
-.night #colorTop, #colorBottom, #colorTLeft, #colorTRight, #colorBLeft, #colorBRight, #buttonBox {
+.night #colorTop, .night #colorBottom, .night #colorTLeft, .night #colorTRight, .night #colorBLeft, .night #colorBRight, .night #buttonBox, .night #pageButton {
     background-color: midnightblue;
 }
 
+.night #colorBottom{
+    animation-iteration-count: 1;
+    animation-delay: 120s;
+    animation-duration: 240s;
+    animation-name: nightDawnBottom;
+}
+
+.night #colorBRight, .night #colorBLeft, .night #buttonBox {
+    animation-iteration-count: 1;
+    animation-delay: 120s;
+    animation-duration: 240s;
+    animation-name: nightDawnBMiddle;
+}
+
+.night #colorTRight, .night #colorTLeft, .night #pageButton {
+    animation-iteration-count: 1;
+    animation-delay: 120s;
+    animation-duration: 240s;
+    animation-name: nightDawnTMiddle;
+}
+
+.night #colorTop {
+    animation-iteration-count: 1;
+    animation-delay: 120s;
+    animation-duration: 240s;
+    animation-name: nightDawnTop;
+}
+
+@keyframes nightDawnBottom {
+    0% {
+        background-color: midnightblue;
+    }
+
+    25% {
+        background-color: rgb(110, 219, 255);
+    }
+
+    50% {
+        background-color: lightskyblue;
+    }
+
+    75%{
+        background-color: #ddc9d8;
+    }
+
+    100%{
+        background-color: #c0fedd;
+    }
+}
+
+@keyframes nightDawnBMiddle {
+    0% {
+        background-color: midnightblue;
+    }
+
+    50%{
+        background-color: rgb(110, 219, 255);
+    }
+
+    75%{
+        background-color: lightskyblue;
+    }
+
+    100%{
+        background-color: #ddc9d8;
+    } 
+}
+
+@keyframes nightDawnTMiddle {
+    0% {
+        background-color: midnightblue;
+    }
+    
+    75% {
+        background-color: rgb(110, 219, 255);
+    }
+
+    100% {
+        background-color: lightskyblue;
+    }
+}
+
+@keyframes nightDawnTop {
+    0% {
+        background-color: midnightblue;
+    }
+
+    100% {
+        background-color: rgb(110, 219, 255);
+    }
+}
+
 .dawn #colorTop {
-    background-color: rgb(74, 210, 255);
+    background-color: rgb(110, 219, 255);
+    animation-iteration-count: 1;
+    animation-delay: 120s;
+    animation-duration: 240s;
+    animation-name: dawnDayTop;
 }
 
-.dawn #colorTLeft, #colorTRight {
+.dawn #colorTLeft, .dawn #colorTRight, .dawn #pageButton {
     background-color: lightskyblue;
+    animation-iteration-count: 1;
+    animation-delay: 120s;
+    animation-duration: 240s;
+    animation-name: dawnDayTMiddle;
 }
 
-.dawn #colorBLeft, #colorBRight, #buttonBox {
+.dawn #colorBLeft, .dawn #colorBRight, .dawn #buttonBox{
     background-color: #ddc9d8;
+    animation-iteration-count: 1;
+    animation-delay: 120s;
+    animation-duration: 240s;
+    animation-name: dawnDayBMiddle;
 }
 
 .dawn #colorBottom {
     background-color: #c0fedd;
+    animation-iteration-count: 1;
+    animation-delay: 120s;
+    animation-duration: 240s;
+    animation-name: dawnDayBottom;
 }
 
-.day #colorTop, #colorBottom, #colorTLeft, #colorTRight, #colorBLeft, #colorBRight, #buttonBox {
+@keyframes dawnDayBottom {
+    0% {
+        background-color: #c0fedd;
+    }
+
+    25% {
+        background-color: #ddc9d8;
+    }
+
+    50% {
+        background-color: lightskyblue;
+    }
+
+    75%{
+        background-color: rgb(110, 219, 255);
+    }
+
+    100%{
+        background-color: deepskyblue;
+    }
+}
+
+@keyframes dawnDayBMiddle {
+    0% {
+        background-color: #ddc9d8;
+    }
+
+    50%{
+        background-color: lightskyblue;
+    }
+
+    75%{
+        background-color: rgb(110, 219, 255);
+    }
+
+    100%{
+        background-color: deepskyblue;
+    } 
+}
+
+@keyframes dawnDayTMiddle {
+    0% {
+        background-color: lightskyblue;
+    }
+
+    75% {
+        background-color: rgb(110, 219, 255);
+    }
+
+    100% {
+        background-color: deepskyblue;
+    }
+}
+
+@keyframes dawnDayTop {
+    0% {
+        background-color: rgb(110, 219, 255);
+    }
+
+    50%{
+        background-color: rgb(52, 204, 255);
+    }
+
+    100% {
+        background-color: deepskyblue;
+    }
+}
+
+.day #colorTop, .day #colorBottom, .day #colorTLeft, .day #colorTRight, .day #colorBLeft, .day #colorBRight, .day #buttonBox, .day #pageButton {
     background-color: deepskyblue;
 }
 
@@ -26,11 +202,11 @@
     background-color: rgb(44, 44, 192);
 }
 
-.dusk #colorTLeft, #colorTRight{
+.dusk #colorTLeft, .dusk #colorTRight, .dusk #pageButton {
     background-color: #094bae;
 }
 
-.dusk #colorBLeft, #colorBRight, #buttonBox {
+.dusk #colorBLeft, .dusk #colorBRight, .dusk #buttonBox {
     background-color: #0658a4;
 }
 
@@ -51,7 +227,7 @@ h2 {
 main div{
     display: grid;
     grid-template-columns: 1fr 1fr, 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
 }
 
 section p {
@@ -82,7 +258,7 @@ section p {
 #colorBLeft {
     display: grid;
     grid-column: 1/2;
-    grid-row: 3;
+    grid-row: 4;
     border-left: solid 4px black;
 }
 
@@ -96,7 +272,7 @@ section p {
 #colorBRight {
     display: grid;
     grid-column: 3/4;
-    grid-row: 3;
+    grid-row: 4;
     min-height: 30vh;
     border-right: solid 4px black;
 }
@@ -104,7 +280,7 @@ section p {
 #colorBottom {
     display: grid;
     grid-column: 1/4;
-    grid-row: 4;
+    grid-row: 5;
     min-height: 10vh;
     border-left: solid 4px black;
     border-right: solid 4px black;
@@ -114,20 +290,29 @@ section p {
 #buttonBox {
     display: grid;
     grid-column: 2;
-    grid-row: 3/4;
+    grid-row: 4;
+}
+
+#pageButton {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3;
 }
 
 #textBox {
-    display: grid;
     grid-column: 2;
     grid-row: 2/3;
+}
+
+.boxStyling {
+    display: grid;
     min-height: 60vh;
     border: solid 6px black;
     background-color: rgb(72, 69, 69);
     color: rgb(204, 182, 15);
 }
 
-#beginText {
-    
+.hidden {
+    display: none;
 }
 

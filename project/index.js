@@ -1,5 +1,12 @@
 
+startCounter = 0
 counter = 0;
+if (startCounter === 0) {
+    function startCycle() {
+        nightTheme()
+    }
+    startCounter += 1;
+}
 function dayCycle() {
     if (counter % 4 === 0) { 
         nightTheme()
@@ -16,7 +23,9 @@ function dayCycle() {
     counter += 1;
 }
 
-// setInterval (dayCycle, 1000)
+setInterval (startCycle, 10)
+
+setInterval (dayCycle, 360000);
 
 
     function nightTheme() {
@@ -42,8 +51,15 @@ function dayCycle() {
     }
 
 
-function changeText(a) {
-    a = Number(a)
-    a = 'next' + (a+1);
-    document.querySelector('body').style.backgroundColor = a;
+// function introText(a) {
+//     a = Number(a)
+//     a = 'introText' + (a+1);
+//     document.querySelector('#buttonbox') = '#nextBIntro';
+//     document.querySelector('#textBox') = a;
+// }
+
+function nextPage(currentSelector, nextSelector) {
+    // this function will hide current pg and show selector pg
+    document.querySelector(currentSelector).className = 'hidden';
+    document.querySelector(nextSelector).className = '';
 }
