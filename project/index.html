@@ -44,7 +44,7 @@
             
                 <section id="page1">
                     <header class="boxStyling">
-                        <h1>Welcome</h1>
+                        <h1 id = page1Text>...Welcome...</h1>
                     </header>
                     <section id = pageButton>
                         <h2>
@@ -55,7 +55,7 @@
 
                 <section id="page2" class="hidden">
                     <header class="boxStyling">
-                        <h1>page2</h1>
+                        <h1>The world is full of monsters</h1>
                     </header>
                     <section id = pageButton>
                         <h2>
@@ -68,6 +68,24 @@
                     <header class="boxStyling">
                         <h1>page3</h1>
                     </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page3', '#page4')">NEXT</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page4" class="hidden">
+                    <header class="boxStyling">
+                        <h1>page4</h1>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page5')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page5')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page5')">NEXT</button>
+                        </h2>
+                    </section>
                 </section>
 
             </section>

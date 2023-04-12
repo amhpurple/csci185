@@ -1,4 +1,4 @@
-.night #colorTop, .night #colorBottom, .night #colorTLeft, .night #colorTRight, .night #colorBLeft, .night #colorBRight, .night #buttonBox, .night #pageButton {
+.night #colorTop, .night #colorBottom, .night #colorTLeft, .night #colorTRight, .night #colorBLeft, .night #colorBRight, .night #buttonBox {
     background-color: midnightblue;
 }
 
@@ -16,7 +16,7 @@
     animation-name: nightDawnBMiddle;
 }
 
-.night #colorTRight, .night #colorTLeft, .night #pageButton {
+.night #colorTRight, .night #colorTLeft {
     animation-iteration-count: 1;
     animation-delay: 120s;
     animation-duration: 240s;
@@ -102,7 +102,7 @@
     animation-name: dawnDayTop;
 }
 
-.dawn #colorTLeft, .dawn #colorTRight, .dawn #pageButton {
+.dawn #colorTLeft, .dawn #colorTRight {
     background-color: lightskyblue;
     animation-iteration-count: 1;
     animation-delay: 120s;
@@ -194,7 +194,7 @@
     }
 }
 
-.day #colorTop, .day #colorBottom, .day #colorTLeft, .day #colorTRight, .day #colorBLeft, .day #colorBRight, .day #buttonBox, .day #pageButton {
+.day #colorTop, .day #colorBottom, .day #colorTLeft, .day #colorTRight, .day #colorBLeft, .day #colorBRight, .day #buttonBox {
     background-color: deepskyblue;
 }
 
@@ -202,7 +202,7 @@
     background-color: rgb(44, 44, 192);
 }
 
-.dusk #colorTLeft, .dusk #colorTRight, .dusk #pageButton {
+.dusk #colorTLeft, .dusk #colorTRight {
     background-color: #094bae;
 }
 
@@ -245,7 +245,7 @@ section p {
     min-height: 20vh;
     border-top: solid 4px black;
     border-left: solid 4px black;
-    border-right: solid 4px black;
+    border-right: solid 4px rgb(1, 1, 1);
 }
 
 #colorTLeft {
@@ -297,6 +297,11 @@ section p {
     display: grid;
     grid-column: 1/4;
     grid-row: 3;
+    border-top: solid 4px black;
+    border-left: solid 10px black;
+    border-right: solid 10px black;
+    border-bottom: solid 10px black;
+    background-color: gray;
 }
 
 #textBox {

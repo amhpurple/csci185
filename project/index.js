@@ -23,9 +23,9 @@ function dayCycle() {
     counter += 1;
 }
 
-setInterval (startCycle, 10)
+// setInterval (startCycle, 10)
 
-setInterval (dayCycle, 360000);
+// setInterval (dayCycle, 360000);
 
 
     function nightTheme() {
