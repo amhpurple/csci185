@@ -4,29 +4,29 @@
 
 .night #colorBottom{
     animation-iteration-count: 1;
-    animation-delay: 120s;
-    animation-duration: 240s;
+    animation-delay: 12s;
+    animation-duration: 24s;
     animation-name: nightDawnBottom;
 }
 
 .night #colorBRight, .night #colorBLeft, .night #buttonBox {
     animation-iteration-count: 1;
-    animation-delay: 120s;
-    animation-duration: 240s;
+    animation-delay: 12s;
+    animation-duration: 24s;
     animation-name: nightDawnBMiddle;
 }
 
 .night #colorTRight, .night #colorTLeft {
     animation-iteration-count: 1;
-    animation-delay: 120s;
-    animation-duration: 240s;
+    animation-delay: 12s;
+    animation-duration: 24s;
     animation-name: nightDawnTMiddle;
 }
 
 .night #colorTop {
     animation-iteration-count: 1;
-    animation-delay: 120s;
-    animation-duration: 240s;
+    animation-delay: 12s;
+    animation-duration: 24s;
     animation-name: nightDawnTop;
 }
 
@@ -97,32 +97,32 @@
 .dawn #colorTop {
     background-color: rgb(110, 219, 255);
     animation-iteration-count: 1;
-    animation-delay: 120s;
-    animation-duration: 240s;
+    animation-delay: 12s;
+    animation-duration: 24s;
     animation-name: dawnDayTop;
 }
 
 .dawn #colorTLeft, .dawn #colorTRight {
     background-color: lightskyblue;
     animation-iteration-count: 1;
-    animation-delay: 120s;
-    animation-duration: 240s;
+    animation-delay: 12s;
+    animation-duration: 24s;
     animation-name: dawnDayTMiddle;
 }
 
 .dawn #colorBLeft, .dawn #colorBRight, .dawn #buttonBox{
     background-color: #ddc9d8;
     animation-iteration-count: 1;
-    animation-delay: 120s;
-    animation-duration: 240s;
+    animation-delay: 12s;
+    animation-duration: 24s;
     animation-name: dawnDayBMiddle;
 }
 
 .dawn #colorBottom {
     background-color: #c0fedd;
     animation-iteration-count: 1;
-    animation-delay: 120s;
-    animation-duration: 240s;
+    animation-delay: 12s;
+    animation-duration: 24s;
     animation-name: dawnDayBottom;
 }
 
@@ -198,20 +198,180 @@
     background-color: deepskyblue;
 }
 
+.day #colorBottom{
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-duration: 24s;
+    animation-name: dayDuskBottom;
+}
+
+.day #colorBRight, .day #colorBLeft, .day #buttonBox {
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-duration: 24s;
+    animation-name: dayDuskBMiddle;
+}
+
+.day #colorTRight, .day #colorTLeft {
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-duration: 24s;
+    animation-name: dayDuskTMiddle;
+}
+
+.day #colorTop {
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-duration: 24s;
+    animation-name: dayDuskTop;
+}
+
+@keyframes dayDuskBottom {
+    0% {
+        background-color: deepskyblue;
+    }
+
+    100%{
+        background-color: #61D095;
+    }
+}
+
+@keyframes dayDuskBMiddle {
+    0% {
+        background-color: deepskyblue;
+    }
+
+    100%{
+        background-color: #0658a4;
+    } 
+}
+
+@keyframes dayDuskTMiddle {
+    0% {
+        background-color: deepskyblue;
+    }
+    
+    75% {
+        background-color: #0658a4;
+    }
+
+    100% {
+        background-color: #094bae;
+    }
+}
+
+@keyframes dayDuskTop {
+    0% {
+        background-color: deepskyblue;
+    }
+
+    50%{
+        background-color: #0658a4; 
+    }
+
+    75%{
+        background-color: #094bae;
+    }
+
+    100%{
+        background-color: rgb(44, 44, 192);
+    } 
+}
+
 .dusk #colorTop {
     background-color: rgb(44, 44, 192);
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-duration: 24s;
+    animation-name: duskNightTop;
 }
 
 .dusk #colorTLeft, .dusk #colorTRight {
     background-color: #094bae;
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-duration: 24s;
+    animation-name: duskNightTMiddle;
 }
 
 .dusk #colorBLeft, .dusk #colorBRight, .dusk #buttonBox {
     background-color: #0658a4;
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-duration: 24s;
+    animation-name: dayDuskBMiddle;
 }
 
 .dusk #colorBottom {
     background-color: #61D095;
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-duration: 24s;
+    animation-name: duskNightBottom;
+}
+
+@keyframes duskNightBottom {
+    0% {
+        background-color: #61D095;
+    }
+
+    25% {
+        background-color: #0658a4;
+    }
+
+    50% {
+        background-color: #094bae;
+    }
+
+    75%{
+        background-color: rgb(44, 44, 192);
+    }
+
+    100%{
+        background-color: midnightblue;
+    }
+}
+
+@keyframes duskNightBMiddle {
+    0% {
+        background-color: #0658a4;
+    }
+
+    50%{
+        background-color: #094bae;
+    }
+
+    75%{
+        background-color: rgb(44, 44, 192);
+    }
+
+    100%{
+        background-color: midnightblue;
+    } 
+}
+
+@keyframes duskNightTMiddle {
+    0% {
+        background-color: #094bae;
+    }
+    
+    75% {
+        background-color: rgb(44, 44, 192);
+    }
+
+    100% {
+        background-color: midnightblue;
+    }
+}
+
+@keyframes duskNightTop {
+    0% {
+        background-color: rgb(44, 44, 192);
+    }
+
+    100% {
+        background-color: midnightblue;
+    }
 }
 
 h1 {

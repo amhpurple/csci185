@@ -1,12 +1,12 @@
 
-startCounter = 0
+// startCounter = 0
 counter = 0;
-if (startCounter === 0) {
-    function startCycle() {
-        nightTheme()
-    }
-    startCounter += 1;
-}
+// if (startCounter === 0) {
+//     function startCycle() {
+//         nightTheme()
+//     }
+//     startCounter += 1;
+// }
 function dayCycle() {
     if (counter % 4 === 0) { 
         nightTheme()
@@ -25,7 +25,7 @@ function dayCycle() {
 
 // setInterval (startCycle, 10)
 
-// setInterval (dayCycle, 360000);
+setInterval (dayCycle, 36000);
 
 
     function nightTheme() {

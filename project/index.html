@@ -5,14 +5,14 @@
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
-<header>
+<!-- <header>
     <nav>
         <button id="night" title="nighttime" onclick="nightTheme()">Night</button>
         <button id="dawn" title="nighttime" onclick="dawnTheme()">Dawn</button>
         <button id="day" title="nighttime" onclick="dayTheme()">Day</button>
         <button id="dusk" title="nighttime" onclick="duskTheme()">Dusk</button>
     </nav>
-</header>
+</header> -->
 <body>
     <main>
         <div>  
@@ -55,7 +55,7 @@
 
                 <section id="page2" class="hidden">
                     <header class="boxStyling">
-                        <h1>The world is full of monsters</h1>
+                        <h1>The world is full of monsters...</h1>
                     </header>
                     <section id = pageButton>
                         <h2>
@@ -66,7 +66,7 @@
 
                 <section id="page3" class="hidden">
                     <header class="boxStyling">
-                        <h1>page3</h1>
+                        <h1>And not all monsters wear monster's skin...</h1>
                     </header>
                     <section id = pageButton>
                         <h2>
@@ -77,13 +77,49 @@
 
                 <section id="page4" class="hidden">
                     <header class="boxStyling">
-                        <h1>page4</h1>
+                        <h1>choose</h1>
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page5')">NEXT</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page5')">NEXT</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page5')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1A')">CHOICE A</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1B')">CHOICE B</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1C')">CHOICE C</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page1A" class="hidden">
+                    <header class="boxStyling">
+                        <h1>A</h1>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A', '#page1A')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A', '#page4')">test</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page1B" class="hidden">
+                    <header class="boxStyling">
+                        <h1>B</h1>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page4')">test</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page1C" class="hidden">
+                    <header class="boxStyling">
+                        <h1>C</h1>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1C', '#page1C')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1C', '#page4')">test</button>
                         </h2>
                     </section>
                 </section>
