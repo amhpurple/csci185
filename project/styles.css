@@ -299,7 +299,7 @@
     animation-iteration-count: 1;
     animation-delay: 12s;
     animation-duration: 24s;
-    animation-name: dayDuskBMiddle;
+    animation-name: duskNightBMiddle;
 }
 
 .dusk #colorBottom {
@@ -386,7 +386,7 @@ h2 {
 
 main div{
     display: grid;
-    grid-template-columns: 1fr 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(5, auto);
 }
 
@@ -406,6 +406,7 @@ section p {
     border-top: solid 4px black;
     border-left: solid 4px black;
     border-right: solid 4px rgb(1, 1, 1);
+    background-color: midnightblue;
 }
 
 #colorTLeft {
@@ -413,6 +414,7 @@ section p {
     grid-column: 1/2;
     grid-row: 2;
     border-left: solid 4px black;
+    background-color: midnightblue;
 }
 
 #colorBLeft {
@@ -420,6 +422,7 @@ section p {
     grid-column: 1/2;
     grid-row: 4;
     border-left: solid 4px black;
+    background-color: midnightblue;
 }
 
 #colorTRight {
@@ -427,6 +430,7 @@ section p {
     grid-column: 3/4;
     grid-row: 2;
     border-right: solid 4px black;
+    background-color: midnightblue;
 }
 
 #colorBRight {
@@ -435,6 +439,7 @@ section p {
     grid-row: 4;
     min-height: 30vh;
     border-right: solid 4px black;
+    background-color: midnightblue;
 }
 
 #colorBottom {
@@ -445,12 +450,14 @@ section p {
     border-left: solid 4px black;
     border-right: solid 4px black;
     border-bottom: solid 4px black;
+    background-color: midnightblue;
 }
 
 #buttonBox {
     display: grid;
     grid-column: 2;
     grid-row: 4;
+    background-color: midnightblue;
 }
 
 #pageButton {
@@ -467,10 +474,10 @@ section p {
 #textBox {
     grid-column: 2;
     grid-row: 2/3;
+    width: 500px;
 }
 
 .boxStyling {
-    display: grid;
     min-height: 60vh;
     border: solid 6px black;
     background-color: rgb(72, 69, 69);
@@ -481,3 +488,18 @@ section p {
     display: none;
 }
 
+button {
+    background-color: #8F95D3;
+    color: black;
+    padding: 5px 10px;
+    border: solid 2px #634B66;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.long {
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}

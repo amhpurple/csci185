@@ -44,7 +44,7 @@
             
                 <section id="page1">
                     <header class="boxStyling">
-                        <h1 id = page1Text>...Welcome...</h1>
+                        <h1 id = page1Text class="short">...Welcome...</h1>
                     </header>
                     <section id = pageButton>
                         <h2>
@@ -55,7 +55,9 @@
 
                 <section id="page2" class="hidden">
                     <header class="boxStyling">
-                        <h1>The world is full of monsters...</h1>
+                        <p class="long"> 
+                            The world is full of monsters...
+                        </p>
                     </header>
                     <section id = pageButton>
                         <h2>
@@ -66,7 +68,7 @@
 
                 <section id="page3" class="hidden">
                     <header class="boxStyling">
-                        <h1>And not all monsters wear monster's skin...</h1>
+                        <p class="short">And not all monsters wear monster's skin...</p>
                     </header>
                     <section id = pageButton>
                         <h2>
@@ -77,49 +79,128 @@
 
                 <section id="page4" class="hidden">
                     <header class="boxStyling">
-                        <h1>choose</h1>
+                        <p class="long"> 
+                            The silent, snowy landscape seems to stretch for miles. 
+                            The forest creaks and groans, mighty branches laden with frost.
+                            A distant rumble carries with it the sound of danger and death. 
+                            Black cloaks writhe in the whipping wind, five silent figures a dark blotch in a sea of blinding white.
+                            One crouches amidst the swirling ice shards, fingers ghosting over trampled snow.
+                            The trail of the monsters is clear, but faintly there is another path.
+                        </p>
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1A')">CHOICE A</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1B')">CHOICE B</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1C')">CHOICE C</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1A')">Follow Monster Tracks</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1B')">Follow Mystery Tracks Alone</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1C')">Tell Team About Mystery Tracks</button>
                         </h2>
                     </section>
                 </section>
 
                 <section id="page1A" class="hidden">
                     <header class="boxStyling">
-                        <h1>A</h1>
+                        <p class="long"> 
+                            The trees grow thicker as the tracks lead deeper and deeper into the forest.
+                            An icy fog descends.
+                            The once distant rumble grows ever louder.
+                            Nearby a branch snaps loudly under the weight of something large.
+                        </p>
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A', '#page1A')">NEXT</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A', '#page4')">test</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A', '#page1A2A')">Turn Towards the Noise</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A', '#page1A2B')">Continue On</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page1A2A" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                            The undergrowth rustles violently.  
+                            A momentary glimpse of a wildcat as a massive form barrels through the trees.
+                            It yowls in alarm before a viscious black maw snaps closed.
+                            All at once there is noise.
+                            A deep rumble that vibrates the very bones.
+                            Whistles of alarm from companions ahead.
+                            The awful thing turns, lets out its terrible roar, and lunges.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A2A', '#page1A2A3A')">Roll</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A2A', '#page1A2A3B')">Block</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A2A', '#page1A2A3C')">Jump Back</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page1A2B" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                            The undergrowth rustles violently.
+                            A yown of alarm cut short.
+                            All at once there is noise.
+                            A deep rumble that vibrates the very bones.
+                            Blistering darkness descends- hot, wet, and red.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A2B', '#page1')">Try Again?</button>
                         </h2>
                     </section>
                 </section>
 
                 <section id="page1B" class="hidden">
                     <header class="boxStyling">
-                        <h1>B</h1>
+                        <p class="long"> 
+                          It's easy to slip away unnoticed, silence as easy as breathing.
+                          Each step ghostlike across the frozen ground.
+                          The trees begin to thin, interspersed with clusters of brambles.
+                          There is a path here, narrow and well worn.
+                        </p>
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B')">NEXT</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page4')">test</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B2A')">Continue</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B2B')">Go Back to Team</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="page1B2A" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                          The path continues, gentle and winding.
+                          When the forest clears there is a house.
+                          It sits small but proud, made of rough logs that seem to lean inward on eachother.
+                          Smoke puffs steadily from the chimney, a candleflame wavers cheerfully in the window.
+                          It looks cozy.
+                          But something feels off.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B2A')">Continue</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B2B')">Go Back to Team</button>
                         </h2>
                     </section>
                 </section>
 
                 <section id="page1C" class="hidden">
                     <header class="boxStyling">
-                        <h1>C</h1>
+                        <p class="long">  
+                            There is a new tension in the air as the mysterious tracks are observed.
+                            They are too small for monsters.
+                            Too carful for the locals.
+                            The only conclusion is the worst.
+                        </p>
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1C', '#page1C')">NEXT</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1C', '#page4')">test</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1C', '#page1C2A')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1C', '#page1C2B')">test</button>
                         </h2>
                     </section>
                 </section>

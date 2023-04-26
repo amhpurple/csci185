@@ -60,6 +60,6 @@ setInterval (dayCycle, 36000);
 
 function nextPage(currentSelector, nextSelector) {
     // this function will hide current pg and show selector pg
-    document.querySelector(currentSelector).className = 'hidden';
-    document.querySelector(nextSelector).className = '';
+        document.querySelector(currentSelector).className = 'hidden';
+        document.querySelector(nextSelector).className = '';
 }
