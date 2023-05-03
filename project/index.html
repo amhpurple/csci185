@@ -5,35 +5,35 @@
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
-<!-- <header>
-    <nav>
+<header>
+    <!-- <nav>
         <button id="night" title="nighttime" onclick="nightTheme()">Night</button>
         <button id="dawn" title="nighttime" onclick="dawnTheme()">Dawn</button>
         <button id="day" title="nighttime" onclick="dayTheme()">Day</button>
         <button id="dusk" title="nighttime" onclick="duskTheme()">Dusk</button>
-    </nav>
-</header> -->
+    </nav> -->
+</header>
 <body>
     <main>
         <div>  
             <section id="colorTop">
-                <p>1</p>
+                <p></p>
             </section>
 
             <section id="colorTLeft">
-                <p>2</p>
+                <p></p>
             </section>
 
             <section id="colorBLeft">
-                <p>2</p>
+                <p></p>
             </section>
 
             <section id="colorTRight">
-                <p>3</p>
+                <p></p>
             </section>
 
             <section id="colorBRight">
-                <p>3</p>
+                <p></p>
             </section>
 
             <section id="colorBottom">
@@ -55,8 +55,11 @@
 
                 <section id="page2" class="hidden">
                     <header class="boxStyling">
-                        <p class="long"> 
-                            The world is full of monsters...
+                        <p class="short"> 
+                            The world is full of monsters.
+                            Terrible creatures that lurk in every shadow.
+                            Hidden behind every unknown corner.
+                            Waiting for the unaware.
                         </p>
                     </header>
                     <section id = pageButton>
@@ -68,7 +71,7 @@
 
                 <section id="page3" class="hidden">
                     <header class="boxStyling">
-                        <p class="short">And not all monsters wear monster's skin...</p>
+                        <p class="short">But not all monsters wear monster's skin...</p>
                     </header>
                     <section id = pageButton>
                         <h2>
@@ -90,17 +93,17 @@
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1A')">Follow Monster Tracks</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1B')">Follow Mystery Tracks Alone</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#page1C')">Tell Team About Mystery Tracks</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#pathA')">Follow Monster Tracks</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#pathB')">Follow Mystery Tracks Alone</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#page4', '#pathC')">Tell Team About Mystery Tracks</button>
                         </h2>
                     </section>
                 </section>
 
-                <section id="page1A" class="hidden">
+                <section id="pathA" class="hidden">
                     <header class="boxStyling">
                         <p class="long"> 
-                            The trees grow thicker as the tracks lead deeper and deeper into the forest.
+                            The trees grow thicker as the monster tracks lead deeper and deeper into the forest.
                             An icy fog descends.
                             The once distant rumble grows ever louder.
                             Nearby a branch snaps loudly under the weight of something large.
@@ -108,18 +111,18 @@
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A', '#page1A2A')">Turn Towards the Noise</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A', '#page1A2B')">Continue On</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathA', '#pathATurn')">Turn Towards the Noise</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathA', '#pathAContinue')">Continue On</button>
                         </h2>
                     </section>
                 </section>
 
-                <section id="page1A2A" class="hidden">
+                <section id="pathATurn" class="hidden">
                     <header class="boxStyling">
                         <p class="long"> 
                             The undergrowth rustles violently.  
                             A momentary glimpse of a wildcat as a massive form barrels through the trees.
-                            It yowls in alarm before a viscious black maw snaps closed.
+                            It yowls in alarm before a vicious black maw snaps closed.
                             All at once there is noise.
                             A deep rumble that vibrates the very bones.
                             Whistles of alarm from companions ahead.
@@ -128,18 +131,74 @@
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A2A', '#page1A2A3A')">Roll</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A2A', '#page1A2A3B')">Block</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A2A', '#page1A2A3C')">Jump Back</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathATurn', '#pathARoll')">Roll</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathATurn', '#pathABlock')">Block</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathATurn', '#pathAJump')">Jump Back</button>
                         </h2>
                     </section>
                 </section>
 
-                <section id="page1A2B" class="hidden">
+                <section id="pathARoll" class="hidden">
                     <header class="boxStyling">
                         <p class="long"> 
+                            Massive claws slam down into the once occupied snow.
+                            Another monster sails overhead colliding with its companion.
+                            They snarl and snap at each other and it is plenty enough distraction to bring the blade down upon them.
+                            There are more, eleven in all, that the group makes quick work of.
+                            Nothing left now but to burn the remains.
+                            The monsters don't like to stay dead after all.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathARoll', '#Final')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathARoll', '#pathAReturn')">Return to Mystery Tracks</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathABlock" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                            The sword forms easily. 
+                            Massive claws collide violently with it. 
+                            Stopped mere inches away from striking flesh.
+                            There is a rumble to the right and the sword twists channeling momentum to send the monster tumbling into its companions path.
+                            They fall in a tangle of snarling, snapping, and flailing limbs.
+                            Dangerous, but easy to dispose of.
+                            There are more, eleven in all, that the group makes quick work of.
+                            Nothing left now but to burn the remains.
+                            The monsters don't like to stay dead after all.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathABlock', '#Final')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathABlock', '#pathAReturn')">Return to Mystery Tracks</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathAJump" class="hidden">
+                    <header class="DBoxStyle">
+                        <p class="long"> 
+                            Sharp teeth miss by inches.
+                            But another monster leaps, colliding in midair.
+                            There is no memory of hitting the ground.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathAJump', '#page1')">Try Again?</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathAContinue" class="hidden">
+                    <header class="DBoxStyle">
+                        <p class="long"> 
                             The undergrowth rustles violently.
-                            A yown of alarm cut short.
+                            A yowl of alarm cut short.
                             All at once there is noise.
                             A deep rumble that vibrates the very bones.
                             Blistering darkness descends- hot, wet, and red.
@@ -147,48 +206,138 @@
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1A2B', '#page1')">Try Again?</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathAContinue', '#page1')">Try Again?</button>
                         </h2>
                     </section>
                 </section>
 
-                <section id="page1B" class="hidden">
+                <section id="pathAReturn" class="hidden">
                     <header class="boxStyling">
                         <p class="long"> 
-                          It's easy to slip away unnoticed, silence as easy as breathing.
-                          Each step ghostlike across the frozen ground.
-                          The trees begin to thin, interspersed with clusters of brambles.
-                          There is a path here, narrow and well worn.
+                            By the time they make it back to the clearing the sun has begun to set.
+                            The faint tracks have long since been filled in with fresh snowfall.
                         </p>
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B2A')">Continue</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B2B')">Go Back to Team</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathAReturn', '#Final')">NEXT</button>
                         </h2>
                     </section>
                 </section>
 
-                <section id="page1B2A" class="hidden">
+                <section id="pathB" class="hidden">
                     <header class="boxStyling">
                         <p class="long"> 
-                          The path continues, gentle and winding.
-                          When the forest clears there is a house.
-                          It sits small but proud, made of rough logs that seem to lean inward on eachother.
-                          Smoke puffs steadily from the chimney, a candleflame wavers cheerfully in the window.
-                          It looks cozy.
-                          But something feels off.
+                            It's easy to slip away unnoticed, silence as easy as breathing.
+                            Each step ghostlike across the frozen ground.
+                            The trees begin to thin, interspersed with clusters of brambles.
+                            There is a path here, narrow and well worn.
                         </p>
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B2A')">Continue</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1B', '#page1B2B')">Go Back to Team</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathB', '#pathBContinue1')">Continue</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathB', '#pathA')">Go Back to Team</button>
                         </h2>
                     </section>
                 </section>
 
-                <section id="page1C" class="hidden">
+                <section id="pathBContinue1" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                            The path continues, gentle and winding.
+                            When the forest clears there is a house.
+                            It sits small but proud, made of rough logs that seem to lean inward on each other.
+                            Smoke puffs steadily from the chimney, a candleflame wavers cheerfully in the window.
+                            It looks cozy.
+                            Something feels off.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathBContinue1', '#pathBContinue2')">Continue</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathBContinue1', '#pathA')">Go Back to Team</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathBContinue2" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                            Immediately there is the feeling of being watched.
+                            Approaching the house evidence that something is wrong becomes more apparent.
+                            A clay mug sits abandoned near an ax that lies haphazardly in the snow.
+                            There is still a faint warmth from it, rapidly being leached away.
+                            The door sits ever so slightly ajar.
+                            The candleflame flickers, and dies.
+                            Light glints off something bright and yellow in the woods.
+                            A black shadow crouches among the trees.
+                            A second flits by at the edge of vision.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathBContinue2', '#pathBRun1')">Run</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathBContinue2', '#pathBApproach')">Approach</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathBApproach" class="hidden">
+                    <header class="DBoxStyle">
+                        <p class="long"> 
+                            The black clad figure lunges.
+                            A knife forms easily in their grip and bites deep into flesh.
+                            The bright, cheery, sunshine-yellow of their mask is utterly impassive.
+                            An alarm whistle pierces the silence, but it will be answered far too late.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathBApproach', '#page1')">Try Again?</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathBRun1" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                            Snow slips underfoot as clawed feet scramble for purchase.
+                            There is danger here.
+                            Too risky to be faced alone.
+                            The path is narrow, so narrow.
+                            Branches and brambles tug insistently, each frozen snap breaks the silence like a siren wail.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathBRun1', '#pathBRun2')">Keep Running</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathBRun1', '#pathBApproach')">Turn Around</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathBRun2" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                            It's not hard to find the rest of the team.
+                            The last dying bellows of the monsters echo through the forest.
+                            Eleven monsters are strewn about.
+                            A warning whistle too late as a knife streaks through the air.
+                            A twelfth body joins them, knife buried in the neck of an amber-masked companion.
+                            The fight is swift and brutal.
+                            Soon yellow, red, and blue too join the rest on the forest floor.
+                            It is not a victory today.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathBRun2', '#Final')">NEXT</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathC" class="hidden">
                     <header class="boxStyling">
                         <p class="long">  
                             There is a new tension in the air as the mysterious tracks are observed.
@@ -199,8 +348,86 @@
                     </header>
                     <section id = pageButton>
                         <h2>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1C', '#page1C2A')">NEXT</button>
-                            <button id="nextBIntro" title="progress" onclick="nextPage('#page1C', '#page1C2B')">test</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathC', '#pathA')">Ignore Mystery Tracks</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathC', '#pathCFollow')">Follow Mystery Tracks</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathCFollow" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long">  
+                            The trees begin to thin, interspersed with clusters of brambles.
+                            There is a path here, narrow and well worn.
+                            When the forest clears there is a house.
+                            It sits small but proud, made of rough logs that seem to lean inward on each other.
+                            Smoke puffs steadily from the chimney, a candleflame wavers cheerfully in the window.
+                            It looks cozy.
+                            Something feels off.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathCFollow', '#pathCInvestigate')">Investigate House</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathCFollow', '#pathA')">Follow Monster Tracks Instead</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathCInvestigate" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long">  
+                            Immediately there is the feeling of being watched.
+                            Approaching the house evidence that something is wrong becomes more apparent.
+                            Carefully the group divides to investigate.
+                            A clay mug sits abandoned near an ax that lies haphazardly in the snow.
+                            There is still a faint warmth from it, rapidly being leached away.
+                            The door sits ever so slightly ajar.
+                            Someone slips inside to have a look.
+                            The candleflame flickers, and dies.
+                            They return with a grim countenance.
+                            Light glints off something bright and yellow in the woods.
+                            A black shadow crouches among the trees.
+                            A second flits by at the edge of vision.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathCInvestigate', '#pathCContinue')">Investigate Further</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathCInvestigate', '#pathA')">Leave to Follow Monster Tracks</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="pathCContinue" class="hidden">
+                    <header class="boxStyling">
+                        <p class="long"> 
+                            The group reconvenes and approaches cautiously.
+                            The shadow in the trees doesn't move.
+                            Something else does.
+                            Black-clad figure, red mask like blood, battle-ax bites furiously into the frozen ground.
+                            Suddenly the yellow masked figure lunges from the other's shadow, knife at the ready.
+                            It's over quickly.
+                            Two against five was never likely to succeed.
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathCContinue', '#Final')">NEXT</button>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#pathCContinue', '#pathA')">Return to Monster Tracks</button>
+                        </h2>
+                    </section>
+                </section>
+
+                <section id="Final" class="hidden">
+                    <header class="boxStyling">
+                        <p class="short">  
+                            To be continued someday?
+                        </p>
+                    </header>
+                    <section id = pageButton>
+                        <h2>
+                            <button id="nextBIntro" title="progress" onclick="nextPage('#Final', '#page1')">Play Again?</button>
                         </h2>
                     </section>
                 </section>
